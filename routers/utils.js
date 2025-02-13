@@ -4,7 +4,7 @@ const router = express.Router()
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:1690683025.
 const { client } = require('../database/db');
 const jwt = require('../middleware/hotel_jwt')
-
+const gen_pass = require('../utils/generatePassword')
 router.use(jwt)
 
 const getCollections = () => ({
@@ -60,5 +60,28 @@ router.get('/cleaned', async (req,res)=>{
         'message':'ok'
     }))
 })
+
+
+router.get('/create/cleaning', async (req,res)=>{
+    const {username} = req.query
+
+    const db = client.db('hotel_soft').collection('credentials_services')
+
+    const pass = gen_pass()
+    const rest = await db.insertOne({
+        username:username,
+        password:pass,
+        work_at:"cleaning",
+        cleaned_total:0
+    })
+
+    res.status(200).json({
+        'message':'ok',
+        'username': username,
+        'password': pass
+    })
+})
+
+
 
 module.exports = router
