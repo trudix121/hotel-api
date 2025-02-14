@@ -1,7 +1,6 @@
 const express = require('express')
 const router = express.Router()
-
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:1690683025.
+const bcrypt = require('bcrypt')
 const { client } = require('../database/db');
 const jwt = require('../middleware/hotel_jwt')
 const gen_pass = require('../utils/generatePassword')
@@ -13,7 +12,7 @@ const getCollections = () => ({
 });
 
 // Get room details
-router.get('/get-room/:room_number', async (req, res) => {
+router.get('/room/:room_number', async (req, res) => {
     try {
         const { room_number } = req.params;
         const { rooms, roomsInfo } = getCollections();
@@ -68,9 +67,10 @@ router.get('/create/cleaning', async (req,res)=>{
     const db = client.db('hotel_soft').collection('credentials_services')
 
     const pass = gen_pass()
+    const hashed_pass = await bcrypt.hash(pass, 16)
     const rest = await db.insertOne({
         username:username,
-        password:pass,
+        password:hashed_pass,
         work_at:"cleaning",
         cleaned_total:0
     })

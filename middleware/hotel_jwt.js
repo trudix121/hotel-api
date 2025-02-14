@@ -16,7 +16,12 @@ const verifyJWTMiddleware = (req, res, next) => {
         
         // Verify the token
         const decoded = jwt.verify(token, process.env.jwt_secret);
-        
+        console.log(decoded)
+        if(decoded.data.work_at){
+            return res.status(400).json({
+                'message':'You do not have admin Privilegies!'
+            })
+        }
         // Add decoded user to request object
         req.user = decoded;
         

@@ -2,53 +2,19 @@ const express = require('express');
 const router = express.Router();
 const jwt = require('../middleware/hotel_jwt');
 const { client } = require('../database/db');
-
+const { get } = require('./utils');
+const getCurrentDateTime = require('../utils/getCurrentDateTime')
+const formatDate = require('../utils/formatDate')
+const getCollections = require('../utils/getCollections')
 router.use(jwt);
 
-// Database collections
-const getCollections = () => ({
-    rooms: client.db('hotel_soft').collection('rooms'),
-    roomsInfo: client.db('hotel_soft').collection('rooms_infos')
-});
-
-// Error handler middleware
-const errorHandler = (res, error) => {
-    console.error('Operation failed:', error);
-    return res.status(500).json({ error: 'Internal server error' });
-};
 
 
-const formatDate = (date) => {
-    const day = String(date.getDate()).padStart(2, '0');
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const year = date.getFullYear();
-    const hours = String(date.getHours()).padStart(2, '0');
-    const minutes = String(date.getMinutes()).padStart(2, '0');
 
-    return {
-        date: `${day}/${month}/${year}`,
-        time: `${hours}.${minutes}`
-    };
-};
 
-const getCurrentDateTime = () => {
-    const now = new Date();
-    
-    // Get day, month, and year with proper padding
-    const day = String(now.getDate()).padStart(2, '0');
-    const month = String(now.getMonth() + 1).padStart(2, '0'); // +1 because months are 0-indexed
-    const year = now.getFullYear();
-    
-    // Get hours and minutes with proper padding
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
 
-    return {
-        date: `${day}/${month}/${year}`,
-        time: `${hours}.${minutes}`,
-        fullDate: `${day}/${month}/${year}`
-    };
-};
+
+
 // Book a room
 router.post('/book/:room_type', async (req, res) => {
     try {
@@ -141,7 +107,7 @@ router.get('/booked/list', async (req, res) => {
         const { roomsInfo } = getCollections();
         const query = req.query.type ? { size: req.query.type } : {};
         
-        const bookedRooms = await roomsInfo.find(query).toArray();
+        const bookedRooms = await roomsInfo.find({isOccupied:true}).toArray();
         res.status(200).json({ list: bookedRooms });
     } catch (error) {
         errorHandler(res, error);
@@ -201,12 +167,16 @@ router.post('/check-in', async (req, res) => {
             )
         ]);
 
+        const room = await getCollections().rooms.findOne({
+            roomNumber: reservation.room_number
+        })
         res.status(200).json({ 
             message: 'Check-in Success',
             room_number: reservation.room_number,
             check_in: `${formattedCheckIn.date} ${formattedCheckIn.time}`,
             expected_checkout: `${formattedCheckOut.date} ${formattedCheckOut.time}`,
-            days_to_stay: stayDays
+            days_to_stay: stayDays,
+            room_code: room.code
         });
     } catch (error) {
         errorHandler(res, error);

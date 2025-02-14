@@ -6,6 +6,7 @@ const { createJWT } = require('../utils/jwt')
 router.post('/login/', async (req, res) => {
     const { username, password } = req.body
     const rest = await Login(username, password)
+
     if (rest !== false) {
         const token = createJWT(rest)
         res.cookie('token', token, {

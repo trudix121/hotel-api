@@ -33,6 +33,14 @@ router.get('/cleaned/:room_id', async (req,res)=>{
             'message':'Room doens`t exist'
         })
     }
+
+    if(rest.isCleaned == true){
+        return res.status(400).json({
+            'message':'The room is already cleaning'
+        })
+    }
+
+
     await getCollections().rooms.updateOne({roomNumber:Number(room_id)},{$set:{
         isCleaned:true,
         cleaned_on:new Date().toLocaleDateString(),
