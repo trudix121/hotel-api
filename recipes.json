@@ -1,0 +1,916 @@
+{
+    "recipes": [
+      {
+        "_id": "R001",
+        "name": "Classic Beef Lasagna",
+        "category": "main_course",
+        "estimated_price": 45.50,
+        "preparation_time": 90,
+        "servings": 8,
+        "ingredients": [
+          { "name": "ground beef", "quantity": 500, "unit": "g" },
+          { "name": "lasagna sheets", "quantity": 250, "unit": "g" },
+          { "name": "mozzarella", "quantity": 300, "unit": "g" },
+          { "name": "tomato sauce", "quantity": 500, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 385, "protein": 23.5, "carbohydrates": 25.3, "fats": 18.7, "fiber": 2.2 },
+        "allergens": [ "gluten", "dairy" ],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R002",
+        "name": "Chicken Parmesan",
+        "category": "main_course",
+        "estimated_price": 37.00,
+        "preparation_time": 50,
+        "servings": 4,
+        "ingredients": [
+          { "name": "chicken breast", "quantity": 250, "unit": "g" },
+          { "name": "breadcrumbs", "quantity": 100, "unit": "g" },
+          { "name": "parmesan cheese", "quantity": 50, "unit": "g" },
+          { "name": "tomato sauce", "quantity": 300, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 420, "protein": 30, "carbohydrates": 35, "fats": 15, "fiber": 3 },
+        "allergens": [ "gluten", "dairy" ],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R003",
+        "name": "Beef Stroganoff",
+        "category": "main_course",
+        "estimated_price": 36.00,
+        "preparation_time": 60,
+        "servings": 4,
+        "ingredients": [
+          { "name": "beef strips", "quantity": 400, "unit": "g" },
+          { "name": "mushrooms", "quantity": 200, "unit": "g" },
+          { "name": "sour cream", "quantity": 150, "unit": "g" },
+          { "name": "onion", "quantity": 1, "unit": "pc" }
+        ],
+        "nutritional_values": { "calories": 500, "protein": 35, "carbohydrates": 40, "fats": 20, "fiber": 4 },
+        "allergens": [ "dairy" ],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R004",
+        "name": "Stuffed Bell Peppers",
+        "category": "main_course",
+        "estimated_price": 40.00,
+        "preparation_time": 55,
+        "servings": 4,
+        "ingredients": [
+          { "name": "bell peppers", "quantity": 4, "unit": "pcs" },
+          { "name": "rice", "quantity": 200, "unit": "g" },
+          { "name": "ground beef", "quantity": 300, "unit": "g" },
+          { "name": "tomato sauce", "quantity": 250, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 450, "protein": 28, "carbohydrates": 50, "fats": 15, "fiber": 5 },
+        "allergens": [ "gluten" ],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R005",
+        "name": "Herb-Crusted Pork Loin",
+        "category": "main_course",
+        "estimated_price": 38.00,
+        "preparation_time": 70,
+        "servings": 4,
+        "ingredients": [
+          { "name": "pork loin", "quantity": 600, "unit": "g" },
+          { "name": "rosemary", "quantity": 10, "unit": "g" },
+          { "name": "thyme", "quantity": 10, "unit": "g" },
+          { "name": "olive oil", "quantity": 30, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 480, "protein": 40, "carbohydrates": 10, "fats": 25, "fiber": 2 },
+        "allergens": [],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R006",
+        "name": "Teriyaki Chicken Bowl",
+        "category": "main_course",
+        "estimated_price": 43.00,
+        "preparation_time": 45,
+        "servings": 4,
+        "ingredients": [
+          { "name": "chicken thigh", "quantity": 400, "unit": "g" },
+          { "name": "teriyaki sauce", "quantity": 100, "unit": "ml" },
+          { "name": "rice", "quantity": 250, "unit": "g" },
+          { "name": "broccoli", "quantity": 150, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 420, "protein": 35, "carbohydrates": 50, "fats": 10, "fiber": 4 },
+        "allergens": [],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R007",
+        "name": "Pesto Pasta with Chicken",
+        "category": "main_course",
+        "estimated_price": 45.00,
+        "preparation_time": 40,
+        "servings": 4,
+        "ingredients": [
+          { "name": "pasta", "quantity": 300, "unit": "g" },
+          { "name": "chicken breast", "quantity": 250, "unit": "g" },
+          { "name": "pesto sauce", "quantity": 100, "unit": "ml" },
+          { "name": "parmesan", "quantity": 50, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 460, "protein": 32, "carbohydrates": 55, "fats": 12, "fiber": 3 },
+        "allergens": [ "gluten", "dairy" ],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R008",
+        "name": "Vegetable Lasagna",
+        "category": "main_course",
+        "estimated_price": 39.00,
+        "preparation_time": 85,
+        "servings": 8,
+        "ingredients": [
+          { "name": "lasagna sheets", "quantity": 250, "unit": "g" },
+          { "name": "zucchini", "quantity": 200, "unit": "g" },
+          { "name": "bell peppers", "quantity": 150, "unit": "g" },
+          { "name": "tomato sauce", "quantity": 500, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 370, "protein": 18, "carbohydrates": 45, "fats": 14, "fiber": 6 },
+        "allergens": [ "gluten" ],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R009",
+        "name": "Chicken Caesar Salad",
+        "category": "salads",
+        "estimated_price": 32.90,
+        "preparation_time": 20,
+        "servings": 2,
+        "ingredients": [
+          { "name": "chicken breast", "quantity": 200, "unit": "g" },
+          { "name": "romaine lettuce", "quantity": 300, "unit": "g" },
+          { "name": "parmesan cheese", "quantity": 50, "unit": "g" },
+          { "name": "croutons", "quantity": 100, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 310, "protein": 25.4, "carbohydrates": 14.8, "fats": 18.2, "fiber": 2.5 },
+        "allergens": [ "gluten", "dairy", "eggs" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R010",
+        "name": "Greek Salad",
+        "category": "salads",
+        "estimated_price": 25.00,
+        "preparation_time": 15,
+        "servings": 2,
+        "ingredients": [
+          { "name": "tomatoes", "quantity": 200, "unit": "g" },
+          { "name": "cucumber", "quantity": 150, "unit": "g" },
+          { "name": "red onion", "quantity": 50, "unit": "g" },
+          { "name": "feta cheese", "quantity": 100, "unit": "g" },
+          { "name": "olives", "quantity": 50, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 220, "protein": 8, "carbohydrates": 12, "fats": 16, "fiber": 3 },
+        "allergens": [ "dairy" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R011",
+        "name": "Cobb Salad",
+        "category": "salads",
+        "estimated_price": 26.00,
+        "preparation_time": 15,
+        "servings": 2,
+        "ingredients": [
+          { "name": "romaine lettuce", "quantity": 200, "unit": "g" },
+          { "name": "grilled chicken", "quantity": 150, "unit": "g" },
+          { "name": "avocado", "quantity": 1, "unit": "pc" },
+          { "name": "boiled egg", "quantity": 2, "unit": "pcs" }
+        ],
+        "nutritional_values": { "calories": 300, "protein": 20, "carbohydrates": 15, "fats": 20, "fiber": 5 },
+        "allergens": [ "eggs" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R012",
+        "name": "Caprese Salad",
+        "category": "salads",
+        "estimated_price": 29.00,
+        "preparation_time": 15,
+        "servings": 2,
+        "ingredients": [
+          { "name": "tomatoes", "quantity": 200, "unit": "g" },
+          { "name": "mozzarella", "quantity": 150, "unit": "g" },
+          { "name": "fresh basil", "quantity": 10, "unit": "g" },
+          { "name": "olive oil", "quantity": 10, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 250, "protein": 12, "carbohydrates": 10, "fats": 16, "fiber": 2 },
+        "allergens": [ "dairy" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R013",
+        "name": "Quinoa Avocado Salad",
+        "category": "salads",
+        "estimated_price": 27.00,
+        "preparation_time": 15,
+        "servings": 2,
+        "ingredients": [
+          { "name": "quinoa", "quantity": 150, "unit": "g" },
+          { "name": "avocado", "quantity": 1, "unit": "pc" },
+          { "name": "cherry tomatoes", "quantity": 100, "unit": "g" },
+          { "name": "lime juice", "quantity": 10, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 280, "protein": 8, "carbohydrates": 35, "fats": 12, "fiber": 7 },
+        "allergens": [],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R014",
+        "name": "Spinach Strawberry Salad",
+        "category": "salads",
+        "estimated_price": 28.00,
+        "preparation_time": 15,
+        "servings": 2,
+        "ingredients": [
+          { "name": "spinach", "quantity": 150, "unit": "g" },
+          { "name": "strawberries", "quantity": 100, "unit": "g" },
+          { "name": "walnuts", "quantity": 30, "unit": "g" },
+          { "name": "balsamic vinaigrette", "quantity": 10, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 240, "protein": 5, "carbohydrates": 20, "fats": 14, "fiber": 4 },
+        "allergens": [ "nuts" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R015",
+        "name": "Chocolate Lava Cake",
+        "category": "desserts",
+        "estimated_price": 28.90,
+        "preparation_time": 25,
+        "servings": 4,
+        "ingredients": [
+          { "name": "dark chocolate", "quantity": 200, "unit": "g" },
+          { "name": "butter", "quantity": 150, "unit": "g" },
+          { "name": "eggs", "quantity": 4, "unit": "pcs" },
+          { "name": "flour", "quantity": 100, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 450, "protein": 8.5, "carbohydrates": 42.3, "fats": 28.7, "fiber": 2.4 },
+        "allergens": [ "gluten", "dairy", "eggs" ],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R016",
+        "name": "Lemon Tart",
+        "category": "desserts",
+        "estimated_price": 31.00,
+        "preparation_time": 30,
+        "servings": 4,
+        "ingredients": [
+          { "name": "lemon curd", "quantity": 150, "unit": "g" },
+          { "name": "pastry dough", "quantity": 200, "unit": "g" },
+          { "name": "eggs", "quantity": 3, "unit": "pcs" },
+          { "name": "sugar", "quantity": 80, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 400, "protein": 6, "carbohydrates": 50, "fats": 20, "fiber": 3 },
+        "allergens": [ "gluten", "dairy", "eggs" ],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R017",
+        "name": "Vanilla Cheesecake",
+        "category": "desserts",
+        "estimated_price": 32.00,
+        "preparation_time": 35,
+        "servings": 4,
+        "ingredients": [
+          { "name": "cream cheese", "quantity": 300, "unit": "g" },
+          { "name": "graham crackers", "quantity": 150, "unit": "g" },
+          { "name": "sugar", "quantity": 100, "unit": "g" },
+          { "name": "eggs", "quantity": 2, "unit": "pcs" }
+        ],
+        "nutritional_values": { "calories": 420, "protein": 8, "carbohydrates": 48, "fats": 25, "fiber": 1 },
+        "allergens": [ "gluten", "dairy", "eggs" ],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R018",
+        "name": "Strawberry Shortcake",
+        "category": "desserts",
+        "estimated_price": 33.00,
+        "preparation_time": 30,
+        "servings": 4,
+        "ingredients": [
+          { "name": "strawberries", "quantity": 200, "unit": "g" },
+          { "name": "shortcake biscuits", "quantity": 150, "unit": "g" },
+          { "name": "whipped cream", "quantity": 100, "unit": "g" },
+          { "name": "sugar", "quantity": 50, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 410, "protein": 7, "carbohydrates": 55, "fats": 22, "fiber": 3 },
+        "allergens": [ "gluten", "dairy" ],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R019",
+        "name": "Apple Pie",
+        "category": "desserts",
+        "estimated_price": 34.00,
+        "preparation_time": 45,
+        "servings": 6,
+        "ingredients": [
+          { "name": "apples", "quantity": 300, "unit": "g" },
+          { "name": "pastry dough", "quantity": 200, "unit": "g" },
+          { "name": "sugar", "quantity": 100, "unit": "g" },
+          { "name": "cinnamon", "quantity": 5, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 390, "protein": 5, "carbohydrates": 60, "fats": 18, "fiber": 4 },
+        "allergens": [ "gluten", "dairy" ],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R020",
+        "name": "Avocado Toast",
+        "category": "breakfast",
+        "estimated_price": 10.50,
+        "preparation_time": 10,
+        "servings": 1,
+        "ingredients": [
+          { "name": "bread slices", "quantity": 2, "unit": "pcs" },
+          { "name": "avocado", "quantity": 1, "unit": "pc" },
+          { "name": "olive oil", "quantity": 10, "unit": "ml" },
+          { "name": "salt", "quantity": 1, "unit": "tsp" },
+          { "name": "pepper", "quantity": 0.5, "unit": "tsp" }
+        ],
+        "nutritional_values": { "calories": 250, "protein": 6, "carbohydrates": 30, "fats": 12, "fiber": 7 },
+        "allergens": [ "gluten" ],
+        "difficulty": "easy",
+        "popular": false
+      },
+      {
+        "_id": "R021",
+        "name": "Blueberry Pancakes",
+        "category": "breakfast",
+        "estimated_price": 20.00,
+        "preparation_time": 20,
+        "servings": 3,
+        "ingredients": [
+          { "name": "flour", "quantity": 200, "unit": "g" },
+          { "name": "blueberries", "quantity": 100, "unit": "g" },
+          { "name": "milk", "quantity": 250, "unit": "ml" },
+          { "name": "egg", "quantity": 1, "unit": "pc" },
+          { "name": "baking powder", "quantity": 1, "unit": "tsp" }
+        ],
+        "nutritional_values": { "calories": 300, "protein": 8, "carbohydrates": 45, "fats": 8, "fiber": 3 },
+        "allergens": [ "gluten", "dairy", "eggs" ],
+        "difficulty": "easy",
+        "popular": false
+      },
+      {
+        "_id": "R022",
+        "name": "French Toast",
+        "category": "breakfast",
+        "estimated_price": 13.00,
+        "preparation_time": 15,
+        "servings": 2,
+        "ingredients": [
+          { "name": "bread slices", "quantity": 2, "unit": "pcs" },
+          { "name": "eggs", "quantity": 2, "unit": "pcs" },
+          { "name": "milk", "quantity": 100, "unit": "ml" },
+          { "name": "cinnamon", "quantity": 2, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 320, "protein": 12, "carbohydrates": 40, "fats": 10, "fiber": 2 },
+        "allergens": [ "gluten", "dairy", "eggs" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R023",
+        "name": "Omelette with Cheese",
+        "category": "breakfast",
+        "estimated_price": 14.00,
+        "preparation_time": 10,
+        "servings": 1,
+        "ingredients": [
+          { "name": "eggs", "quantity": 2, "unit": "pcs" },
+          { "name": "cheese", "quantity": 50, "unit": "g" },
+          { "name": "bell pepper", "quantity": 50, "unit": "g" },
+          { "name": "salt", "quantity": 1, "unit": "tsp" }
+        ],
+        "nutritional_values": { "calories": 280, "protein": 18, "carbohydrates": 5, "fats": 20, "fiber": 1 },
+        "allergens": [ "dairy", "eggs" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R024",
+        "name": "Smoked Salmon Bagel",
+        "category": "breakfast",
+        "estimated_price": 15.00,
+        "preparation_time": 10,
+        "servings": 1,
+        "ingredients": [
+          { "name": "bagel", "quantity": 1, "unit": "pc" },
+          { "name": "smoked salmon", "quantity": 100, "unit": "g" },
+          { "name": "cream cheese", "quantity": 30, "unit": "g" },
+          { "name": "capers", "quantity": 5, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 350, "protein": 20, "carbohydrates": 40, "fats": 15, "fiber": 2 },
+        "allergens": [ "gluten", "dairy", "fish" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R025",
+        "name": "Tomato Basil Soup",
+        "category": "soups",
+        "estimated_price": 18.75,
+        "preparation_time": 35,
+        "servings": 4,
+        "ingredients": [
+          { "name": "tomatoes", "quantity": 800, "unit": "g" },
+          { "name": "fresh basil", "quantity": 15, "unit": "g" },
+          { "name": "onion", "quantity": 1, "unit": "pc" },
+          { "name": "garlic", "quantity": 3, "unit": "cloves" },
+          { "name": "vegetable broth", "quantity": 500, "unit": "ml" },
+          { "name": "olive oil", "quantity": 20, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 120, "protein": 3, "carbohydrates": 18, "fats": 4, "fiber": 5 },
+        "allergens": [],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R026",
+        "name": "Chicken Noodle Soup",
+        "category": "soups",
+        "estimated_price": 18.00,
+        "preparation_time": 25,
+        "servings": 4,
+        "ingredients": [
+          { "name": "chicken broth", "quantity": 500, "unit": "ml" },
+          { "name": "chicken pieces", "quantity": 200, "unit": "g" },
+          { "name": "noodles", "quantity": 100, "unit": "g" },
+          { "name": "carrots", "quantity": 50, "unit": "g" },
+          { "name": "celery", "quantity": 50, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 150, "protein": 8, "carbohydrates": 20, "fats": 5, "fiber": 3 },
+        "allergens": [ "gluten" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R027",
+        "name": "Butternut Squash Soup",
+        "category": "soups",
+        "estimated_price": 19.00,
+        "preparation_time": 30,
+        "servings": 4,
+        "ingredients": [
+          { "name": "butternut squash", "quantity": 500, "unit": "g" },
+          { "name": "vegetable broth", "quantity": 500, "unit": "ml" },
+          { "name": "onion", "quantity": 1, "unit": "pc" },
+          { "name": "nutmeg", "quantity": 2, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 140, "protein": 3, "carbohydrates": 25, "fats": 4, "fiber": 6 },
+        "allergens": [],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R028",
+        "name": "Minestrone",
+        "category": "soups",
+        "estimated_price": 20.00,
+        "preparation_time": 40,
+        "servings": 4,
+        "ingredients": [
+          { "name": "vegetable broth", "quantity": 500, "unit": "ml" },
+          { "name": "mixed vegetables", "quantity": 300, "unit": "g" },
+          { "name": "pasta", "quantity": 100, "unit": "g" },
+          { "name": "beans", "quantity": 150, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 160, "protein": 7, "carbohydrates": 30, "fats": 5, "fiber": 7 },
+        "allergens": [ "gluten" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R029",
+        "name": "Clam Chowder",
+        "category": "soups",
+        "estimated_price": 23.00,
+        "preparation_time": 35,
+        "servings": 4,
+        "ingredients": [
+          { "name": "clams", "quantity": 300, "unit": "g" },
+          { "name": "potato", "quantity": 200, "unit": "g" },
+          { "name": "cream", "quantity": 100, "unit": "ml" },
+          { "name": "onion", "quantity": 1, "unit": "pc" },
+          { "name": "bacon", "quantity": 50, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 250, "protein": 15, "carbohydrates": 20, "fats": 18, "fiber": 2 },
+        "allergens": [ "dairy", "shellfish", "gluten" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R030",
+        "name": "Grilled Salmon",
+        "category": "seafood",
+        "estimated_price": 52.90,
+        "preparation_time": 30,
+        "servings": 2,
+        "ingredients": [
+          { "name": "salmon fillet", "quantity": 400, "unit": "g" },
+          { "name": "lemon", "quantity": 1, "unit": "pc" },
+          { "name": "olive oil", "quantity": 30, "unit": "ml" },
+          { "name": "fresh dill", "quantity": 20, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 380, "protein": 42.5, "carbohydrates": 2.3, "fats": 22.7, "fiber": 0.4 },
+        "allergens": [ "fish" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R031",
+        "name": "Shrimp Paella",
+        "category": "seafood",
+        "estimated_price": 60.00,
+        "preparation_time": 50,
+        "servings": 4,
+        "ingredients": [
+          { "name": "shrimp", "quantity": 400, "unit": "g" },
+          { "name": "rice", "quantity": 300, "unit": "g" },
+          { "name": "saffron", "quantity": 1, "unit": "tsp" },
+          { "name": "peas", "quantity": 100, "unit": "g" },
+          { "name": "bell pepper", "quantity": 1, "unit": "pc" },
+          { "name": "tomato", "quantity": 2, "unit": "pcs" },
+          { "name": "olive oil", "quantity": 30, "unit": "ml" },
+          { "name": "garlic", "quantity": 3, "unit": "cloves" }
+        ],
+        "nutritional_values": { "calories": 480, "protein": 32, "carbohydrates": 55, "fats": 15, "fiber": 4 },
+        "allergens": [ "shellfish", "gluten" ],
+        "difficulty": "hard",
+        "popular": true
+      },
+      {
+        "_id": "R032",
+        "name": "Shrimp Scampi",
+        "category": "seafood",
+        "estimated_price": 40.00,
+        "preparation_time": 35,
+        "servings": 2,
+        "ingredients": [
+          { "name": "shrimp", "quantity": 300, "unit": "g" },
+          { "name": "garlic", "quantity": 3, "unit": "cloves" },
+          { "name": "butter", "quantity": 30, "unit": "g" },
+          { "name": "lemon juice", "quantity": 20, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 450, "protein": 40, "carbohydrates": 10, "fats": 22, "fiber": 2 },
+        "allergens": [ "dairy", "shellfish" ],
+        "difficulty": "hard",
+        "popular": true
+      },
+      {
+        "_id": "R033",
+        "name": "Fish Tacos",
+        "category": "seafood",
+        "estimated_price": 41.00,
+        "preparation_time": 35,
+        "servings": 2,
+        "ingredients": [
+          { "name": "white fish", "quantity": 300, "unit": "g" },
+          { "name": "tortillas", "quantity": 4, "unit": "pcs" },
+          { "name": "cabbage", "quantity": 100, "unit": "g" },
+          { "name": "lime", "quantity": 1, "unit": "pc" }
+        ],
+        "nutritional_values": { "calories": 430, "protein": 38, "carbohydrates": 35, "fats": 12, "fiber": 5 },
+        "allergens": [ "gluten", "fish" ],
+        "difficulty": "hard",
+        "popular": true
+      },
+      {
+        "_id": "R034",
+        "name": "Lobster Bisque",
+        "category": "seafood",
+        "estimated_price": 42.00,
+        "preparation_time": 35,
+        "servings": 2,
+        "ingredients": [
+          { "name": "lobster", "quantity": 300, "unit": "g" },
+          { "name": "cream", "quantity": 100, "unit": "ml" },
+          { "name": "butter", "quantity": 30, "unit": "g" },
+          { "name": "tomato paste", "quantity": 20, "unit": "g" },
+          { "name": "garlic", "quantity": 2, "unit": "cloves" }
+        ],
+        "nutritional_values": { "calories": 450, "protein": 40, "carbohydrates": 10, "fats": 22, "fiber": 2 },
+        "allergens": [ "dairy", "shellfish" ],
+        "difficulty": "hard",
+        "popular": true
+      },
+      {
+        "_id": "R035",
+        "name": "Vegan Buddha Bowl",
+        "category": "vegan",
+        "estimated_price": 25.00,
+        "preparation_time": 25,
+        "servings": 2,
+        "ingredients": [
+          { "name": "quinoa", "quantity": 150, "unit": "g" },
+          { "name": "chickpeas", "quantity": 200, "unit": "g" },
+          { "name": "avocado", "quantity": 1, "unit": "pc" },
+          { "name": "cherry tomatoes", "quantity": 150, "unit": "g" },
+          { "name": "cucumber", "quantity": 100, "unit": "g" },
+          { "name": "spinach", "quantity": 50, "unit": "g" },
+          { "name": "tahini", "quantity": 30, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 350, "protein": 12, "carbohydrates": 50, "fats": 10, "fiber": 8 },
+        "allergens": [ "sesame" ],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R036",
+        "name": "Chickpea Curry",
+        "category": "vegan",
+        "estimated_price": 22.00,
+        "preparation_time": 20,
+        "servings": 2,
+        "ingredients": [
+          { "name": "chickpeas", "quantity": 250, "unit": "g" },
+          { "name": "tomatoes", "quantity": 200, "unit": "g" },
+          { "name": "onion", "quantity": 1, "unit": "pc" },
+          { "name": "curry powder", "quantity": 5, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 300, "protein": 12, "carbohydrates": 40, "fats": 10, "fiber": 8 },
+        "allergens": [],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R037",
+        "name": "Vegan Tacos",
+        "category": "vegan",
+        "estimated_price": 23.00,
+        "preparation_time": 20,
+        "servings": 2,
+        "ingredients": [
+          { "name": "black beans", "quantity": 200, "unit": "g" },
+          { "name": "corn tortillas", "quantity": 4, "unit": "pcs" },
+          { "name": "avocado", "quantity": 1, "unit": "pc" },
+          { "name": "salsa", "quantity": 50, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 300, "protein": 12, "carbohydrates": 40, "fats": 10, "fiber": 8 },
+        "allergens": [ "gluten" ],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R038",
+        "name": "Vegan Pad Thai",
+        "category": "vegan",
+        "estimated_price": 25.00,
+        "preparation_time": 20,
+        "servings": 2,
+        "ingredients": [
+          { "name": "rice noodles", "quantity": 150, "unit": "g" },
+          { "name": "tofu", "quantity": 200, "unit": "g" },
+          { "name": "bean sprouts", "quantity": 100, "unit": "g" },
+          { "name": "tamarind sauce", "quantity": 30, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 300, "protein": 12, "carbohydrates": 40, "fats": 10, "fiber": 8 },
+        "allergens": [ "soy", "gluten" ],
+        "difficulty": "medium",
+        "popular": true
+      },
+      {
+        "_id": "R039",
+        "name": "Bruschetta",
+        "category": "appetizers",
+        "estimated_price": 10.00,
+        "preparation_time": 15,
+        "servings": 6,
+        "ingredients": [
+          { "name": "toasted baguette slices", "quantity": 6, "unit": "pcs" },
+          { "name": "diced tomatoes", "quantity": 150, "unit": "g" },
+          { "name": "fresh basil", "quantity": 10, "unit": "g" },
+          { "name": "olive oil", "quantity": 10, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 200, "protein": 8, "carbohydrates": 15, "fats": 10, "fiber": 2 },
+        "allergens": [ "gluten" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R040",
+        "name": "Stuffed Mushrooms",
+        "category": "appetizers",
+        "estimated_price": 11.00,
+        "preparation_time": 15,
+        "servings": 6,
+        "ingredients": [
+          { "name": "mushrooms", "quantity": 300, "unit": "g" },
+          { "name": "cream cheese", "quantity": 100, "unit": "g" },
+          { "name": "garlic", "quantity": 2, "unit": "cloves" },
+          { "name": "parsley", "quantity": 5, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 210, "protein": 9, "carbohydrates": 12, "fats": 11, "fiber": 3 },
+        "allergens": [ "dairy" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R041",
+        "name": "Garlic Bread",
+        "category": "appetizers",
+        "estimated_price": 12.00,
+        "preparation_time": 15,
+        "servings": 6,
+        "ingredients": [
+          { "name": "baguette", "quantity": 1, "unit": "pc" },
+          { "name": "garlic butter", "quantity": 50, "unit": "g" },
+          { "name": "parsley", "quantity": 5, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 220, "protein": 8, "carbohydrates": 30, "fats": 9, "fiber": 2 },
+        "allergens": [ "gluten", "dairy" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R042",
+        "name": "Caprese Skewers",
+        "category": "appetizers",
+        "estimated_price": 13.00,
+        "preparation_time": 15,
+        "servings": 6,
+        "ingredients": [
+          { "name": "cherry tomatoes", "quantity": 150, "unit": "g" },
+          { "name": "mozzarella balls", "quantity": 100, "unit": "g" },
+          { "name": "fresh basil", "quantity": 10, "unit": "g" },
+          { "name": "balsamic glaze", "quantity": 15, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 200, "protein": 10, "carbohydrates": 12, "fats": 10, "fiber": 2 },
+        "allergens": [ "dairy" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R043",
+        "name": "Garlic Mashed Potatoes",
+        "category": "sides",
+        "estimated_price": 8.00,
+        "preparation_time": 15,
+        "servings": 4,
+        "ingredients": [
+          { "name": "potatoes", "quantity": 500, "unit": "g" },
+          { "name": "garlic", "quantity": 2, "unit": "cloves" },
+          { "name": "butter", "quantity": 30, "unit": "g" },
+          { "name": "milk", "quantity": 100, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 180, "protein": 4, "carbohydrates": 30, "fats": 6, "fiber": 4 },
+        "allergens": [ "dairy" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R044",
+        "name": "Steamed Broccoli",
+        "category": "sides",
+        "estimated_price": 9.00,
+        "preparation_time": 10,
+        "servings": 4,
+        "ingredients": [
+          { "name": "broccoli", "quantity": 400, "unit": "g" },
+          { "name": "olive oil", "quantity": 10, "unit": "ml" },
+          { "name": "salt", "quantity": 2, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 90, "protein": 6, "carbohydrates": 12, "fats": 3, "fiber": 5 },
+        "allergens": [],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R045",
+        "name": "Roasted Brussels Sprouts",
+        "category": "sides",
+        "estimated_price": 10.00,
+        "preparation_time": 20,
+        "servings": 4,
+        "ingredients": [
+          { "name": "Brussels sprouts", "quantity": 400, "unit": "g" },
+          { "name": "olive oil", "quantity": 15, "unit": "ml" },
+          { "name": "salt", "quantity": 3, "unit": "g" },
+          { "name": "pepper", "quantity": 1, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 150, "protein": 5, "carbohydrates": 15, "fats": 8, "fiber": 6 },
+        "allergens": [],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R046",
+        "name": "Coleslaw",
+        "category": "sides",
+        "estimated_price": 11.00,
+        "preparation_time": 15,
+        "servings": 4,
+        "ingredients": [
+          { "name": "cabbage", "quantity": 300, "unit": "g" },
+          { "name": "carrots", "quantity": 100, "unit": "g" },
+          { "name": "mayonnaise", "quantity": 50, "unit": "g" },
+          { "name": "vinegar", "quantity": 10, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 180, "protein": 4, "carbohydrates": 20, "fats": 10, "fiber": 5 },
+        "allergens": [ "eggs" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R047",
+        "name": "Trail Mix",
+        "category": "snacks",
+        "estimated_price": 5.00,
+        "preparation_time": 10,
+        "servings": 1,
+        "ingredients": [
+          { "name": "mixed nuts", "quantity": 50, "unit": "g" },
+          { "name": "dried cranberries", "quantity": 30, "unit": "g" },
+          { "name": "raisins", "quantity": 20, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 250, "protein": 8, "carbohydrates": 20, "fats": 15, "fiber": 4 },
+        "allergens": [ "nuts" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R048",
+        "name": "Cheese Platter",
+        "category": "snacks",
+        "estimated_price": 17.00,
+        "preparation_time": 10,
+        "servings": 1,
+        "ingredients": [
+          { "name": "assorted cheeses", "quantity": 150, "unit": "g" },
+          { "name": "crackers", "quantity": 50, "unit": "g" },
+          { "name": "grapes", "quantity": 100, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 300, "protein": 15, "carbohydrates": 25, "fats": 18, "fiber": 3 },
+        "allergens": [ "dairy", "gluten" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R049",
+        "name": "Onion Rings",
+        "category": "snacks",
+        "estimated_price": 22.00,
+        "preparation_time": 20,
+        "servings": 1,
+        "ingredients": [
+          { "name": "onions", "quantity": 200, "unit": "g" },
+          { "name": "batter", "quantity": 100, "unit": "g" },
+          { "name": "oil", "quantity": 50, "unit": "ml" },
+          { "name": "salt", "quantity": 2, "unit": "g" }
+        ],
+        "nutritional_values": { "calories": 350, "protein": 6, "carbohydrates": 40, "fats": 20, "fiber": 5 },
+        "allergens": [ "gluten" ],
+        "difficulty": "easy",
+        "popular": true
+      },
+      {
+        "_id": "R050",
+        "name": "Fruit Yogurt Parfait",
+        "category": "snacks",
+        "estimated_price": 16.00,
+        "preparation_time": 10,
+        "servings": 1,
+        "ingredients": [
+          { "name": "yogurt", "quantity": 150, "unit": "g" },
+          { "name": "mixed berries", "quantity": 100, "unit": "g" },
+          { "name": "granola", "quantity": 50, "unit": "g" },
+          { "name": "honey", "quantity": 10, "unit": "ml" }
+        ],
+        "nutritional_values": { "calories": 350, "protein": 15, "carbohydrates": 45, "fats": 8, "fiber": 4 },
+        "allergens": [ "dairy", "gluten" ],
+        "difficulty": "easy",
+        "popular": true
+      }
+    ]
+  }
+  

@@ -20,13 +20,14 @@ const auth = require('./routers/auth')
 const services = require('./routers/services')
 const utils = require('./routers/utils')
 const customers = require('./routers/customers')
-
+const hotel = require('./routers/hotel')
 
 app.use('/auth', auth)
 app.use('/hotel', book)
 app.use('/services', services)
 app.use('/hotel', utils)
 app.use('/customers', customers)
+app.use('/hotel', hotel)
 app.listen(process.env.PORT, ()=>{
     console.log(`Api started on port ${process.env.PORT}`)
 })

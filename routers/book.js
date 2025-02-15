@@ -8,13 +8,6 @@ const formatDate = require('../utils/formatDate')
 const getCollections = require('../utils/getCollections')
 router.use(jwt);
 
-
-
-
-
-
-
-
 // Book a room
 router.post('/book/:room_type', async (req, res) => {
     try {
@@ -22,8 +15,6 @@ router.post('/book/:room_type', async (req, res) => {
         const userInfo = req.body;
         const { rooms, roomsInfo } = getCollections();
         const { date, time, fullDate } = getCurrentDateTime();
-
-        // Verifică mai întâi dacă există o cameră specifică cerută
         if (req.query.room) {
             const requestedRoom = await rooms.findOne({
                 roomNumber: Number(req.query.room),
@@ -64,8 +55,6 @@ router.post('/book/:room_type', async (req, res) => {
                 room_registered: String(requestedRoom.roomNumber)
             });
         }
-
-        // Dacă nu există o cameră specifică cerută, găsește toate camerele disponibile
         const availableRooms = await rooms.find({
             size: room_type,
             isOccupied: false,
@@ -164,7 +153,11 @@ router.post('/check-in', async (req, res) => {
                         days_to_stay: stayDays
                     }
                 }
-            )
+            ),
+            client.db('hotel_soft').collection('rooms_receipts').insertOne({
+                roomNumber:Number(reservation.room_number),
+                products_bayed:[]
+            })
         ]);
 
         const room = await getCollections().rooms.findOne({
@@ -192,10 +185,17 @@ router.post('/check-out', async (req, res) => {
             room_number: Number(room_number) 
         });
 
+        const room = await rooms.findOne({roomNumber:Number(room_number)})
+
         if (!occupiedRoom) {
             return res.status(404).json({ message: 'Room occupied Not Found' });
         }
 
+
+
+        const receipts_prices = await client.db('hotel_soft').collection('rooms_receipts').findOne({roomNumber:Number(room_number)})
+
+        const total_price = receipts_prices.products_bayed.reduce((sum, item) => sum + item.price, 0) + Number(room.price)
         await Promise.all([
             rooms.updateOne(
                 { roomNumber: Number(room_number) },
@@ -210,10 +210,11 @@ router.post('/check-out', async (req, res) => {
                     cleaned_on:''
                 }}
             ),
-            roomsInfo.deleteOne({ room_number: Number(room_number) })
+            roomsInfo.deleteOne({ room_number: Number(room_number) }),
+            client.db('hotel_soft').collection('rooms_receipts').deleteOne({roomNumber:Number(room_number)})
         ]);
 
-        res.status(200).json({ message: 'Checked-Out Successfully' });
+        res.status(200).json({ message: 'Checked-Out Successfully', moneyToPay:`${total_price.toFixed(2)}$` });
     } catch (error) {
         errorHandler(res, error);
     }

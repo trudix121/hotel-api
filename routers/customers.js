@@ -37,7 +37,7 @@ router.post('/review', async (req,res)=>{
 router.get('/review/see', jwt, async (req,res)=>{
     const db = client.db('hotel_soft').collection('reviews')
 
-    const rest = await db.find({}).toArray()
+    const rest = await db.find({verified:false}).toArray()
 
     return res.status(200).json(rest)
 } )
